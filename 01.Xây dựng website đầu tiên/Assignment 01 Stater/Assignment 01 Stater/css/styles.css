@@ -1,0 +1,273 @@
+/* Phần CSS chung */
+body {
+  margin: 0px;
+}
+
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0px 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+}
+
+.section {
+  margin: 40px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(79, 74, 74);
+  margin: 0px;
+  padding-bottom: 5px;
+}
+/* --- Phần code những thuộc tính chung --- */
+
+/* Chỉnh font size */
+td,
+.section-content--font-size,
+.section-content__pl li {
+  font-size: 17px;
+}
+
+/* Chỉnh width:100% */
+table,
+.section-content {
+  width: 100%;
+}
+
+/* chỉnh width: 65% chung*/
+.container--width {
+  width: 65%;
+}
+
+/* chỉnh phần thành phần bên trong content nằm ngang */
+.section-content--flex {
+  display: flex;
+}
+
+/* chỉnh margin và padding cho thẻ p */
+.container--mp p {
+  margin: 0;
+  padding: 3px 0px;
+}
+
+/* cho margin 0px */
+.margin--zero p {
+  margin: 0px;
+}
+
+/* Chỉnh padding cho li */
+.section-content__p li {
+  padding: 3px 0px;
+}
+
+/* chỉnh margin cho ul */
+.section-content__m ul {
+  margin: 17px 0px 0px 0px;
+}
+
+/* padding left cho ul, ol */
+.section-content__pl ul,
+.section-content__pl ol {
+  padding-left: 25px;
+}
+
+/* thêm dấu gạch chân dài ở phía dưới */
+.section-content__border-bottom {
+  border-bottom: 2px solid rgb(238, 236, 236);
+}
+
+/* --- End --- */
+
+/* (*) Phần information (*) */
+
+/* padding top cho content cách box-shadow 40px*/
+.section-content--pt {
+  padding-top: 40px;
+}
+
+/* color và margin cho content info */
+.section-content__info h1 {
+  color: #0e2452;
+  margin: 0px;
+}
+
+/* cho width:50% phần content info và avatar chia đôi width  */
+.section-content__info,
+.section-content__avatar {
+  width: 50%;
+}
+
+/* width, height cho avatar */
+.section-content__avatar img {
+  width: 113px;
+  height: 113px;
+  float: right; /*cho ảnh nằm bên phải*/
+}
+
+/* làm đậm chữ trong thẻ td */
+table td:first-child {
+  font-weight: bold;
+}
+
+/* padding làm khoảng cách các dòng */
+td {
+  padding: 6px 0px;
+}
+
+/* (*) Phần Mục tiêu nghề nghiệp (*) */
+
+/* padding top cho phần nội dung */
+.section-content__career-goal {
+  padding-top: 30px;
+}
+
+/* (*) Phần Học vấn (*) */
+
+/* xóa dấu chấm ở đầu dòng ở thẻ li và padding là 0px */
+.section-content__bullet-point ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+/*tạo vị trí cố định của thanh dọc */
+.section-content__bullet-point li {
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* tạo thanh dọc ở đầu dòng   */
+.section-content__bullet-point li:before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 4px;
+  width: 2px;
+  opacity: 0.1;
+}
+
+/* tạo dấu chấm tròn có màu đen để chỉ mục thời gian */
+.section-content__bullet-point li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  height: 10px;
+  width: 10px;
+  background-color: #000;
+  border-radius: 100%;
+}
+
+/* cho phần p đầu tiên là margin 0 và cho width 35% để nó đẩy thẻ div ra */
+.section-content__bullet-point p:first-child {
+  margin: 0;
+  width: 35%;
+}
+
+/* tạo dấu gạch ngang ở dưới và cho các thành phần nằm ngang */
+.section-content__bullet-point--container {
+  padding-bottom: 25px;
+}
+
+/* (*) Phần kinh nghiệm làm việc (*) */
+
+/* Tạo dấu gạch ngang ở đầu dòng ngoại trừ p đầu tiên */
+.container__experience p:not(:first-of-type)::before {
+  content: "-";
+  margin-right: 0.1em;
+}
+
+/* (*) Phần Hoạt động (*) */
+/* ==> nó giống phần kinh nghiệm */
+
+/* (*) Phần kĩ năng (*) */
+
+/* cho width của thẻ p đầu tiên là 35% và p-r cho nó */
+.section-content__title-skill p:first-child {
+  width: 35%;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+/* (*) Phần chứng nhận - giải thưởng (*) */
+.section-content__certificate {
+  align-items: center;
+}
+
+/* cho margin-top của thẻ p đầu tiên là 17px */
+.section-content__certificate:first-child {
+  margin-top: 17px;
+}
+
+/* chỉnh lại padding cho thẻ p  */
+.section-content__certificate p {
+  padding: 5px 20px 5px 0px;
+}
+
+/* cho thẻ p đầu tiên là chữ đậm */
+.section-content__certificate p:first-child {
+  width: 35%;
+}
+
+/* (*) Phần Sở thích (*) */
+
+/* chỉnh lại margin cho ul */
+.section-content__ul--margin ul {
+  margin: 17px 0px;
+}
+/* (*) Phần Dự án (*) */
+
+/* cho h1 cách xuống dưới 5px */
+.section-content__project h1 {
+  margin-bottom: 5px;
+}
+
+/* chỉnh lại margin cho h2 */
+.section-content__project h2 {
+  margin: 20px 0px 5px 0px;
+}
+
+/*(*) Phần Liên hệ (*) */
+
+/* margin cho thẻ ol */
+.section-content__contact ol {
+  margin: 17px 0 0 0;
+}
+
+/* xóa gạch chân cho thẻ a và cho chữ màu xanh */
+.section-content__contact li a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* cho phần liên hệ có cách dưới 40px */
+.section-content__contact {
+  padding-bottom: 40px;
+}
