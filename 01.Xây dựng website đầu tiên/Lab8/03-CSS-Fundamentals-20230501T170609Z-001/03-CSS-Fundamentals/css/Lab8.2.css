@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+/* Product */
+.product {
+  border: 4px solid black;
+  width: 900px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.sale {
+  position: absolute;
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  display: inline-block;
+  top: -17px;
+  left: -38px;
+}
+
+.product-title {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  padding: 15px;
+}
+/* Product information */
+.price {
+  font-size: 24px;
+  float: left;
+}
+
+.shipping {
+  color: #777;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.more-info:link {
+  color: black;
+}
+
+.more-info:visited {
+  color: purple;
+}
+
+.more-info:hover {
+  color: red;
+}
+
+.more-info:active {
+  color: green;
+}
+
+.color {
+  background-color: #000;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+.color-red {
+  background-color: #ec2f2f;
+}
+.color-yellow {
+  background-color: #f0bf1e;
+}
+.color-green {
+  background-color: #90cc20;
+}
+.color-brown {
+  background-color: #885215;
+}
+
+/* Product details */
+.details-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.details-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+/* Button */
+.add-cart {
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-top: 4px solid black;
+  padding: 15px;
+  width: 100%;
+}
+
+.add-cart:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.product-img {
+  float: left;
+  margin-right: 40px;
+  height: 250px;
+  width: 250px;
+}
+.product-info {
+  width: 243px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+.product-details {
+  float: left;
+  margin-top: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+}
