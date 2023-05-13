@@ -4,41 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lab10.1</title>
+    <title>Lab10.7</title>
     <style>
-      .d1 {
+      .item1 {
         background: LightSkyBlue;
       }
-      .d2 {
+      .item2 {
         background: LightSalmon;
       }
-      .d3 {
+      .item3 {
         background: PaleTurquoise;
       }
-      .d4 {
+      .item4 {
         background: LightPink;
       }
-      .d5 {
+
+      .item5 {
         background: PaleGreen;
+        /* Only change code below this line */
+
+        grid-column: 2 / span 2;
+        /* Only change code above this line */
       }
 
       .container {
         font-size: 40px;
+        min-height: 300px;
         width: 100%;
         background: LightGray;
-        /* Only change code below this line */
         display: grid;
-        /* Only change code above this line */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="d1">1</div>
-      <div class="d2">2</div>
-      <div class="d3">3</div>
-      <div class="d4">4</div>
-      <div class="d5">5</div>
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
     </div>
   </body>
 </html>
