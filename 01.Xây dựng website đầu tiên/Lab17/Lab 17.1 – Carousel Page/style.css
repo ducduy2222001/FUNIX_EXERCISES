@@ -1,0 +1,25 @@
+.bg-img1 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url(./img/img1.jpg);
+  background-position: center center;
+  height: 600px;
+}
+.bg-img2 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url(./img/img2.jpg);
+  background-position: center center;
+  height: 600px;
+}
+.bg-img3 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url(./img/img3.jpg);
+  background-position: center center;
+  height: 600px;
+}
+
+.footer-margin {
+  padding-top: 100px;
+}
