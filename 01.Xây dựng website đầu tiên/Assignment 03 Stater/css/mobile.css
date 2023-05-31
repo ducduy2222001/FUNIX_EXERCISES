@@ -1,12 +1,4 @@
-@media only screen and (max-width: 768px) {
-  /* ------------Phần chung--------------- */
-
-  html,
-  section > .containers {
-    width: 100%;
-    display: inline;
-  }
-
+@media (max-width: 740px) {
   /*---------------------Phần banner----------------- */
   /* căn chỉnh nội dung  */
   #banner {
@@ -21,16 +13,16 @@
 
   /* chỉnh phần font cho thẻ h1 ở banner */
   #banner h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
   /* chỉnh phần font cho thẻ span ở banner */
   #banner span {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 300;
   }
 
   .section-title {
-    font-size: 45px;
+    font-size: 40px;
     padding-left: 20px;
   }
 
@@ -47,7 +39,7 @@
   }
 
   #nav-bar .containers a {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 500;
   }
 
@@ -89,11 +81,11 @@
   }
 
   .info li {
-    font-size: 23px;
+    font-size: 20px;
     padding: 5px 0px;
   }
   #target p {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   #about .section-title {
@@ -120,14 +112,9 @@
     margin-bottom: 50px;
   }
 
-  .containers-child {
-    width: 100%;
-  }
-
   .containers-child--br {
     border: none;
     margin-right: 0px;
-    width: 500px;
   }
 
   /*-------------------Phần chứng chỉ---------------- */
@@ -136,7 +123,6 @@
   }
 
   .containers-child-certificate {
-    display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
@@ -144,13 +130,13 @@
 
   .containers-child-certificate div {
     padding-left: 0px;
-    font-size: 23px;
-    width: 500px;
+    font-size: 20px;
   }
 
   .containers-child-certificate img {
-    width: 500px;
+    width: 100%;
     height: 300px;
+    display: block;
   }
 
   .containers-child-certificate ul li {
@@ -163,7 +149,7 @@
   }
 
   .containers-child-title h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .containers-child-title i {
@@ -174,7 +160,7 @@
   }
 
   .containers-child--circle {
-    font-size: 23px;
+    font-size: 20px;
     padding: 0 40px;
   }
 
@@ -204,7 +190,7 @@
 
   .containers-child-step li p,
   .containers-child--interest li p {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .containers-child-step__color {
@@ -218,7 +204,7 @@
   /* -------------------Phần project---------------- */
 
   .containers-child-project__CV {
-    font-size: 23px;
+    font-size: 20px;
     padding: 30px;
   }
 
@@ -226,7 +212,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .project-icon p i {
@@ -264,7 +250,7 @@
 
   .containers-child-project {
     width: 93%;
-    margin: 0px 20px;
+    margin: 0px auto;
   }
 
   .containers-child-project i {
@@ -277,7 +263,7 @@
   }
 
   td {
-    font-size: 23px;
+    font-size: 20px;
   }
   /* --------------Phần footer------------------- */
 

@@ -1,3 +1,4 @@
+/* -----------Phần chung------------ */
 * {
   font-size: 18px;
 }
@@ -69,7 +70,7 @@
   font-size: 25px;
 }
 
-/* Phần goal */
+/*--------------Phần goal------------- */
 #goals {
   flex-grow: 2;
 }
@@ -80,7 +81,7 @@
   padding: 0px 0px 5px 0px;
 }
 
-/* Phần team */
+/*------------- Phần team---------------- */
 .content-number {
   width: 50px;
   height: 40px;
@@ -92,7 +93,7 @@
   border: 2px solid #bbb;
 }
 
-/* Phần timeline */
+/*---------------Phần timeline--------------- */
 #timeline {
   grid-row-end: span 2;
 }
@@ -102,7 +103,7 @@
   padding: 0px 0px 5px 0px;
   width: 100%;
 }
-/* Phần scopes */
+/*----------------Phần scopes-------------- */
 #scopes .content {
   display: flex;
   padding: 10px;

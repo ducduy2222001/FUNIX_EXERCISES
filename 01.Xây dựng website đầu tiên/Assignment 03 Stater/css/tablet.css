@@ -1,14 +1,5 @@
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 740px) and (max-width: 1023px) {
   /*-----------------Phần chung----------------- */
-  /* body {
-    width: 768px;
-  } */
-
-  html,
-  section > .containers {
-    width: 100%;
-    display: inline;
-  }
 
   /*-----------------Phần banner----------------- */
   .containers-banner {
@@ -196,7 +187,10 @@
   }
 
   .grid-3-col-1 {
-    margin: 0px 20px;
+    justify-content: center;
+    margin: 0 20px;
+    grid-template-columns: repeat(3, 30%);
+    column-gap: 30px;
   }
 
   .project-icon {
