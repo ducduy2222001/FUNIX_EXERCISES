@@ -1,0 +1,233 @@
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /*-----------------Phần chung----------------- */
+  /* body {
+    width: 768px;
+  } */
+
+  html,
+  section > .containers {
+    width: 100%;
+    display: inline;
+  }
+
+  /*-----------------Phần banner----------------- */
+  .containers-banner {
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  /* căn chỉnh nội dung  */
+  #banner {
+    top: 19%;
+  }
+
+  #banner span {
+    font-weight: 300;
+    font-size: 25px;
+  }
+
+  #banner h1 {
+    font-size: 55px;
+  }
+
+  /*-----------------Phần nav----------------- */
+  .avatar {
+    display: none;
+  }
+  /* cho thẻ a vị trí thứ 2 padding right */
+  #nav-bar .containers a:nth-child(2) {
+    padding: 30px;
+    border-right: 1px solid #bbb;
+    margin-right: 30px;
+  }
+
+  /* cho thẻ a vị trí thứ 4 padding right */
+  #nav-bar .containers a:nth-child(4) {
+    padding: 30px;
+    border-left: 1px solid #bbb;
+    margin-left: 30px;
+  }
+
+  #nav-bar .containers a {
+    padding: 15px 30px !important;
+    font-size: 17px;
+  }
+
+  #nav-bar .containers a:nth-child(2) {
+    border-right: none;
+    margin-right: 0;
+  }
+  #nav-bar .containers a:nth-child(4) {
+    border-left: none;
+    margin-left: 0;
+  }
+
+  /*-----------------Phần about----------------- */
+  #about .containers {
+    width: 100%;
+  }
+
+  .grid-2-col .containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  #about .section-title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .containers-child {
+    width: 100%;
+  }
+
+  /*-------------Phần kinh nghiệm, học vấn,..------------ */
+  /* Phần chỉnh sửa cột */
+
+  .grid-2-tablet .containers {
+    display: flex;
+  }
+
+  .grid-2-tablet .containers {
+    padding: 30px;
+    column-gap: 30px;
+    flex-wrap: nowrap;
+  }
+
+  .container-1,
+  .container-2 {
+    row-gap: 30px;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .containers-child--interest {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .containers-child--interest li i {
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    border: 2px solid #199cdb;
+  }
+
+  .containers-child--interest li {
+    padding: 0;
+  }
+
+  .containers-child-step li p,
+  .containers-child--interest li p {
+    font-size: 17px;
+  }
+
+  .containers-child-title {
+    flex-direction: column-reverse;
+  }
+
+  .containers-child-title h1 {
+    font-size: 30px;
+    display: block;
+  }
+
+  .containers-child-title i {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    opacity: 0.5;
+  }
+
+  /*-------------Phần chứng chỉ---------------- */
+  #certificate {
+    background-color: #f7f7f7;
+  }
+
+  #certificate h1 {
+    padding-bottom: 40px;
+    padding-left: 20px;
+  }
+
+  .containers-child-certificate:not(:nth-child(1)) {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 40px 20px !important;
+  }
+
+  .containers-child-certificate:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 30px 20px;
+  }
+
+  .containers-child-certificate div {
+    padding-left: 0px;
+  }
+
+  .containers-child--br {
+    margin-right: 0px;
+  }
+
+  .containers-child-certificate img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .containers-child-certificate:nth-child(3) {
+    padding: 40px 20px 0px 20px !important;
+  }
+
+  .containers-child--br {
+    border-right: none;
+  }
+
+  .br {
+    border-right: 1px solid #d6c08d;
+    padding: 0px 20px 0px 0px;
+  }
+
+  /*----------------Phần dự án--------------- */
+
+  #project .section-title {
+    padding: 0px 20px;
+  }
+
+  .grid-3-col-1 {
+    margin: 0px 20px;
+  }
+
+  .project-icon {
+    padding-right: 30px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .project-icon p {
+    display: flex;
+  }
+
+  .project-icon div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+  }
+
+  .containers-child-project__CV {
+    font-weight: 500;
+    padding: 20px 15px 20px 15px;
+  }
+
+  .containers-child-project span {
+    height: 35px;
+    display: flex;
+    align-items: center;
+  }
+
+  /*--------------Phần footer-------------- */
+  #footer li p {
+    margin-bottom: 0;
+  }
+}

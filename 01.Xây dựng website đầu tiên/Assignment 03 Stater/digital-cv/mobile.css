@@ -1,0 +1,42 @@
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content ul li {
+    flex-direction: column;
+    padding: 10px !important;
+  }
+
+  .content-number {
+    height: 50px;
+  }
+
+  #scopes .content {
+    flex-direction: column;
+  }
+
+  #scopes .content-child-title {
+    font-size: 25px;
+  }
+
+  #goals {
+    order: 1;
+  }
+
+  #scopes {
+    order: 2;
+  }
+
+  #team {
+    order: 3;
+  }
+
+  #primary {
+    order: 4;
+  }
+
+  #timeline {
+    order: 5;
+  }
+}

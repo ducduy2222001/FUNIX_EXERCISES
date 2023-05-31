@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/latop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <!-- Phần Tên và Vị trí -->
+    <div class="containers-banner">
+      <div id="banner" class="d-flex">
+        <h1>Phan Đức Duy</h1>
+        <span>Full Stack Developer</span>
+      </div>
+    </div>
+    <!-- Phần Navigation -->
+    <section id="nav-bar">
+      <nav class="containers">
+        <!-- trong này chứa các icon và tên theo từng icon -->
+        <a href="./digital-cv/digital-cv.html">
+          <i class="icon-user"></i>Thông tin</a
+        >
+        <a href="./digital-cv/digital-cv.html"
+          ><i class="icon-doc-text-inv"></i>Lý lịch</a
+        >
+        <img src="./images/avatar.png" alt="" class="avatar" />
+        <a href="./digital-cv/digital-cv.html"
+          ><i class="icon-mail-alt"></i>Chứng chỉ</a
+        >
+        <a href="./digital-cv/digital-cv.html"
+          ><i class="icon-star-1"></i>Dự Án</a
+        >
+      </nav>
+    </section>
+    <section id="about">
+      <div id="target">
+        <!-- Phần mục tiêu nghề nghiệp -->
+        <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+        <p>
+          Tôi là một nhà phát triển fullstack với kinh nghiệm 6 tháng phát triển
+          Web, đặc biệt yêu thích tạo giao diện hiện đại và thân thiện với người
+          dùng. Tôi đã hoàn thành chương trình chứng chỉ Doanh Nghiệp của FUNiX
+          và hy vọng trở thành một Fullstack Developer giỏi hơn. Tôi sẵn sàng
+          học hỏi và đóng góp vào sự thành công của công ty.
+        </p>
+      </div>
+      <div id="personal-info">
+        <!-- Phần thông tin cá nhân -->
+        <h1 class="section-title">Thông tin cá nhân</h1>
+        <ul class="mt-40 info">
+          <li><span>Giới tính</span> : Nam</li>
+          <li><span>Ngày sinh</span> : 22/02/2001</li>
+          <li><span>Điện thoại</span> : (+84) 376100842</li>
+          <li><span>Email</span> : duypdFX23266@funix.edu.vn</li>
+          <li><span>Địa chỉ</span> : Đà Nẵng, Việt Nam</li>
+          <li><span>Website</span> : Facebook</li>
+        </ul>
+        <!-- div này chứa các icon social -->
+        <div class="icon-social">
+          <i class="icon-twitter"></i>
+          <i class="icon-facebook"></i>
+          <i class="icon-gplus"></i>
+          <i class="icon-linkedin"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Phần thông tin kinh nghiệm, học vấn, hoạt động, sở thích, ngôn ngữ, kỹ năng -->
+    <section id="job-info" class="grid-3-col grid-2-tablet grid-1-mobile">
+      <div class="containers">
+        <div class="container-1">
+          <!-- thẻ div này chứa các thông tin con, tương tự các thẻ có class containers-child-->
+          <div class="containers-child">
+            <div class="containers-child-title">
+              <h1>Kinh nghiệm</h1>
+              <i class="ic-toolbox"></i>
+            </div>
+            <ul>
+              <!-- Thẻ li này có class để tạo dấu chấm tròn đầu dòng, tương tự các thẻ li còn lại có class containers-child--circle -->
+              <li class="containers-child--circle">
+                <p>Đồ án tốt nghiệp - Full Stack Developer</p>
+                <i>02/2023 - 5/2023</i>
+                <ol>
+                  <li class="containers-child--strikethrough">
+                    Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã
+                    có.
+                  </li>
+                  <li class="containers-child--strikethrough">
+                    Phân tích và thiết kế Database, đọc hiểu thiết kế các sơ đồ
+                    của tài liệu Architecture.
+                  </li>
+                  <li class="containers-child--strikethrough">
+                    Sử dụng ngôn ngữ Javasrcipt, ReactJS để xây dựng các
+                    component (sử dụng Redux-tookit,...), call API hiển thị dữ
+                    liệu.
+                  </li>
+                </ol>
+              </li>
+              <li class="containers-child--circle">
+                <p>Funix - Full Stack Developer</p>
+                <i>05/2022</i>
+                <ol>
+                  <!-- containers-child--strikethrough này để tạo dấu gạch đầu dòng, tương tự các thẻ còn lại -->
+                  <li class="containers-child--strikethrough">
+                    Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã
+                    có.
+                  </li>
+                  <li class="containers-child--strikethrough">
+                    Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL
+                    (MySQL, SQLServer, NodeJS) và viết được các câu truy vấn.
+                  </li>
+                  <li class="containers-child--strikethrough">
+                    Sử dụng ngôn ngữ ReactJS để xây dựng các Web Server.
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+          <!-- Tương tự như trên -->
+          <div class="containers-child">
+            <div class="containers-child-title">
+              <h1>Kỹ năng</h1>
+              <i class="ic-tools-2"></i>
+            </div>
+            <!-- class này để tạo các step gạch ngang có màu xanh -->
+            <ul class="containers-child-step">
+              <li>
+                <p>HTML/CSS</p>
+                <!--class cái này để tạo màu xanh -->
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+              </li>
+              <li>
+                <p>Javasrcipt</p>
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+              </li>
+              <li>
+                <p>NodeJS</p>
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+              </li>
+              <li>
+                <p>Bootstrap5</p>
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+              </li>
+            </ul>
+          </div>
+          <!-- Tương tự như trên -->
+          <div class="containers-child">
+            <div class="containers-child-title">
+              <h1>Ngôn ngữ</h1>
+              <i class="ic-mic"></i>
+            </div>
+            <!-- class này để tạo các step gạch ngang có màu xanh -->
+            <ul class="containers-child-step">
+              <li>
+                <p>Tiếng Anh - IELTS 6.0</p>
+                <!--class cái này để tạo màu xanh -->
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+              </li>
+              <li>
+                <p>Tiếng Nhật - N5</p>
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+                <p class="containers-child-step__color"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-2">
+          <!-- Tương tự như trên -->
+          <div class="containers-child">
+            <div class="containers-child-title">
+              <h1>Hoạt Động</h1>
+              <i class="ic-toolbox"></i>
+            </div>
+            <ul>
+              <li class="containers-child--circle">
+                <p>Nghiên cứu khoa học</p>
+                <i>02/2023 - 05/2023</i>
+                <ol>
+                  <li class="containers-child--strikethrough">
+                    Đề tài: Trang Web Cộng Đồng Start-Up
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+          <!-- Tương tự như trên -->
+          <div class="containers-child">
+            <div class="containers-child-title">
+              <h1>Học Vấn</h1>
+              <i class="ic-pencil"></i>
+            </div>
+            <ul>
+              <li class="containers-child--circle">
+                <p>Cử nhân Đại học Duy Tân</p>
+                <i>06/2019 - 07/2023</i>
+                <ol>
+                  <li class="containers-child--strikethrough">
+                    Chuyên ngành: Công Nghệ Phần Mềm
+                  </li>
+                  <li class="containers-child--strikethrough">GPA: 3.34 / 4</li>
+                </ol>
+              </li>
+              <li class="containers-child--circle">
+                <p>Chứng chỉ doanh nghiệp FUNIX</p>
+                <i>05/2023 - 08/2023</i>
+                <ol>
+                  <li class="containers-child--strikethrough">
+                    Tốt nghiệp chứng chỉ doanh nghiệp nhanh FullStack.
+                  </li>
+                  <li class="containers-child--strikethrough">GPA: 9 / 10</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+          <!-- Tương tự như trên -->
+          <div class="containers-child">
+            <div class="containers-child-title">
+              <h1>Sở Thích</h1>
+              <i class="ic-telescope"></i>
+            </div>
+            <ul class="containers-child--interest">
+              <li>
+                <i class="ic-megaphone"></i>
+                <p>Âm nhạc</p>
+              </li>
+              <li>
+                <i class="ic-strategy"></i>
+                <p>Chơi game</p>
+              </li>
+              <li>
+                <i class="ic-hotairballoon"></i>
+                <p>Du lịch</p>
+              </li>
+              <li>
+                <i class="ic-basket"></i>
+                <p>Nấu ăn</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Phần chứng chỉ -->
+    <section id="certificate">
+      <div class="containers">
+        <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+        <!-- phần này 2 cột -->
+        <div class="grid-2-col-1 grid-1-mobile">
+          <!-- Phần này chứa ảnh chứng chỉ và nội dung -->
+          <div class="containers-child-certificate">
+            <img src="./images/Cert_DBI.png" alt="" class="br" />
+            <div class="containers-child--br br">
+              <p>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</p>
+              <ul>
+                <li>Chứng chỉ thuộc chương trình CCDN</li>
+                <li>GPA: 10</li>
+              </ul>
+            </div>
+          </div>
+          <!-- tương tự như trên -->
+          <div class="containers-child-certificate">
+            <img src="./images/Cert_PRF.png" alt="" />
+            <div>
+              <p>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</p>
+              <ul>
+                <li>Chứng chỉ thuộc chương trình CCDN</li>
+                <li>GPA: 10</li>
+              </ul>
+            </div>
+          </div>
+          <!-- tương tự như trên -->
+          <div class="containers-child-certificate">
+            <img src="./images/Cert_WEB.png" alt="" />
+            <div class="">
+              <p>CHỨNG CHỈ LẬP TRÌNH FRONT-END REACTJS - FUNIX</p>
+              <ul>
+                <li>Chứng chỉ thuộc chương trình CCDN</li>
+                <li>GPA: 10</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Phần project -->
+    <section id="project">
+      <div class="containers">
+        <h1 class="section-title">Dự án</h1>
+        <!-- Phần này tạo 3 cột -->
+        <div class="grid-3-col-1 grid-1-mobile">
+          <!-- Phần này chứa ảnh và nội dung project -->
+          <div class="containers-child containers-child-project">
+            <img
+              src="./images/project_1.png"
+              alt="project1"
+              class="containers-child__img"
+            />
+            <div class="containers-child-project__CV">CV CÁ NHÂN</div>
+            <div class="project-icon">
+              <span>2023</span>
+              <div>
+                <p><i class="icon-user-1"></i>FUNIX</p>
+                <p><i class="icon-lamp"></i>Developer</p>
+              </div>
+            </div>
+            <table>
+              <tr>
+                <td>Mô tả</td>
+                <td>
+                  Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng
+                  như kỹ năng nghề nghiệp.
+                </td>
+              </tr>
+              <tr>
+                <td>Nhiệm vụ</td>
+                <td>
+                  - Phát triển code - Review code - Tối ưu code - Xử lí lỗi
+                </td>
+              </tr>
+              <tr>
+                <td>Công nghệ</td>
+                <td>- HTML, CSS</td>
+              </tr>
+            </table>
+          </div>
+          <!-- tương tự như trên -->
+          <div class="containers-child containers-child-project">
+            <img
+              src="./images/project_2.png"
+              alt="project1"
+              class="containers-child__img"
+            />
+            <div class="containers-child-project__CV">
+              TRANG WEB QUẢN LÝ THÚ CƯNG
+            </div>
+            <div class="project-icon">
+              <span>2023</span>
+              <div>
+                <p><i class="icon-user-1"></i>FUNIX</p>
+                <p><i class="icon-lamp"></i>Developer</p>
+              </div>
+            </div>
+            <table>
+              <tr>
+                <td>Mô tả</td>
+                <td>
+                  Ứng dụng giúp quản lý các thông tin của thú cưng như: Cân
+                  nặng, giống, tình trạng tiêm chủng,... Bao gồm các chức năng
+                  thêm / sửa / xóa.
+                </td>
+              </tr>
+              <tr>
+                <td>Nhiệm vụ</td>
+                <td>
+                  - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                </td>
+              </tr>
+              <tr>
+                <td>Công nghệ</td>
+                <td>- HTML, CSS, Javasrcipt.</td>
+              </tr>
+            </table>
+          </div>
+          <!-- tương tự như trên -->
+          <div class="containers-child containers-child-project">
+            <img
+              src="./images/project_3.png"
+              alt="project1"
+              class="containers-child__img"
+            />
+            <div class="containers-child-project__CV">
+              TRANG WEB XEM TIN TỨC
+            </div>
+            <div class="project-icon">
+              <span>2023</span>
+              <div>
+                <p><i class="icon-user-1"></i>FUNIX</p>
+                <p><i class="icon-lamp"></i>Developer</p>
+              </div>
+            </div>
+            <table>
+              <tr>
+                <td>Mô tả</td>
+                <td>
+                  Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng có
+                  thể tìm kiếm các tin tức dựa theo các từ khóa
+                </td>
+              </tr>
+              <tr>
+                <td>Nhiệm vụ</td>
+                <td>
+                  - Phát triển code - Review code - Tối ưu code - Xử lý lỗi.
+                </td>
+              </tr>
+              <tr>
+                <td>Công nghệ</td>
+                <td>- HTML, CSS, Javasrcipt.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Phần footer -->
+    <section id="footer" class="bg-grey">
+      <!-- Phần này tiêu để icon -->
+      <div class="containers">
+        <ul>
+          <li>
+            <i class="icon-facebook-circled"></i>
+            <p>Facebook</p>
+          </li>
+          <li>
+            <i class="icon-linkedin-circled"></i>
+            <p>Linkedin</p>
+          </li>
+          <li>
+            <i class="icon-github-circled"></i>
+            <p>Github</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

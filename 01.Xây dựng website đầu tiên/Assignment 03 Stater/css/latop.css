@@ -7,27 +7,27 @@
   background: #f7f7f7;
 }
 
-/*---Phần chung--- */
+/*-----------------Phần chung----------------- */
 .section-title {
   margin: 40px 0px; /*Margin cho tất cả tiêu đề*/
 }
 
-/* cho độ dài và margin cho phần container */
-section > .container {
-  width: 1170px;
-  margin: auto;
-  display: block;
+/* cho độ dài và margin cho phần containers */
+section > .containers {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
 }
 
 /* tạo dấu gạch đầu dòng */
-.container-child-certificate li::before,
-.container-child--strikethrough::before {
+.containers-child-certificate li::before,
+.containers-child--strikethrough::before {
   content: "- ";
 }
 
-/*---Phần Banner--- */
+/*-----------------Phần Banner----------------- */
 /* css cho ảnh của banner */
-.container-banner {
+.containers-banner {
   height: 70vh;
   position: relative;
   background-image: linear-gradient(
@@ -43,13 +43,12 @@ section > .container {
 #banner {
   width: 100%;
   position: absolute;
-  display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 40px;
   top: 15%;
 }
-/*--Phần Navigation---*/
+/*-----------------Phần Navigation-----------------*/
 
 /* căn chỉnh phần avatart top,left,border */
 .avatar {
@@ -68,23 +67,23 @@ section > .container {
 }
 
 /* cho padding = 0 */
-#nav-bar .container {
+#nav-bar .containers {
   padding: 0;
 }
 
 /* cho thẻ a vị trí thứ 2 padding right */
-#nav-bar .container a:nth-child(2) {
-  padding-right: 220px;
+#nav-bar .containers a:nth-child(2) {
+  padding-right: 120px;
 }
 
 /* cho thẻ a vị trí thứ 4 padding right */
-#nav-bar .container a:nth-child(4) {
-  padding-left: 220px;
+#nav-bar .containers a:nth-child(4) {
+  padding-left: 120px;
 }
 
 /* css cho thẻ a */
-#nav-bar .container a {
-  padding: 30px 30px;
+#nav-bar .containers a {
+  padding: 30px;
   border-right: 1px solid #bbb;
   display: inline-block;
   text-decoration: none;
@@ -95,25 +94,29 @@ section > .container {
 }
 
 /* căn chỉnh padding right cho thẻ i chứa icon */
-#nav-bar .container a i {
+#nav-bar .containers a i {
   padding-right: 5px;
   color: #199cdb;
 }
 
 /* Cho thẻ a đầu tiên là border left */
-#nav-bar .container a:first-child {
+#nav-bar .containers a:first-child {
   border-left: 1px solid #bbb;
 }
 
-/*---Phần mục tiêu / thông tin---*/
+/*-----------------Phần mục tiêu / thông tin-----------------*/
 
 #about {
   margin-bottom: 40px;
 }
 
+#target {
+  background-color: #f5f5f5;
+}
+
 /* căn chỉnh 2 cột và width 100% */
 .grid-2-col-1,
-.grid-2-col .container {
+#about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
@@ -152,55 +155,67 @@ section > .container {
   color: #199cdb;
 }
 
-/* Phần Kinh nghiệm, học tập,... */
-
+/*-----------------Phần Kinh nghiệm, học tập,...----------------- */
 /* chỉnh 3 cột và row-gap 30px */
-.grid-3-col-1,
-.grid-3-col .container {
+.grid-3-col-1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 30px;
   justify-items: center;
+  gap: 30px;
+}
+
+.container-1,
+.container-2 {
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.grid-3-col .containers {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
 }
 
 /* border cho class */
-.container-child {
+.containers-child {
   padding: 0px 20px 80px 20px;
   border: 1px solid #bbb;
-  width: 80%;
+  width: 100%;
 }
 
-.container-child-title {
+.containers-child-title {
   display: flex;
   margin-top: 40px;
-  align-items: flex-end;
 }
 
-/* cho thẻ h1 75% */
-.container-child-title h1 {
-  width: 75%;
+/* cho thẻ h1 80% */
+.containers-child-title h1 {
+  width: 80%;
+  font-size: 35px;
 }
 
-/* cho thẻ i 25%  */
-.container-child-title i {
-  width: 25%;
+/* cho thẻ i 20%  */
+.containers-child-title i {
+  width: 20%;
   font-size: 45px;
 }
 
 /* xóa gạch đầu dòng và padding: 0 */
-.container-child ul {
+.containers-child ul {
   list-style-type: none;
   padding: 0;
 }
 
 /* xóa gạch đầu dòng và padding */
-.container-child ol {
+.containers-child ol {
   list-style-type: none;
   padding: 6px 0 0 0;
 }
 
 /* tạo dấu tròn màu xanh */
-.container-child--circle::before {
+.containers-child--circle::before {
   content: "";
   position: relative;
   display: inline-block;
@@ -213,22 +228,22 @@ section > .container {
 }
 
 /* css cho dấu tròn */
-.container-child--circle {
+.containers-child--circle {
   padding-left: 30px;
   margin-top: 20px;
 }
 
-.container-child--circle p {
+.containers-child--circle p {
   font-weight: 500;
 }
 
-.container-child--interest {
+.containers-child--interest {
   display: flex;
   margin-top: 30px;
 }
 
 /* css cho thẻ li thuộc phần sở thích  */
-.container-child--interest li {
+.containers-child--interest li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,30 +251,31 @@ section > .container {
 }
 
 /* css cho thẻ i thuộc phần sở thích  */
-.container-child--interest li i {
+.containers-child--interest li i {
   border: 1.5px solid #199cdb;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #199cdb;
   margin-bottom: 10px;
+  font-size: 25px;
 }
 
-.container-child-step {
+.containers-child-step {
   margin-top: 30px;
 }
 
 /* tô đậm màu chữ  */
-.container-child-step li {
+.containers-child-step li {
   margin-top: 20px;
   font-weight: 500;
 }
 
 /*  */
-.container-child-step__color {
+.containers-child-step__color {
   background: #199cdb;
   display: inline-block;
   height: 2px;
@@ -268,7 +284,12 @@ section > .container {
 }
 
 /* Phần chứng chỉ giải thưởng */
-.container-child-certificate {
+
+#certificate {
+  background-color: #f7f7f7;
+}
+
+.containers-child-certificate {
   display: flex;
 }
 
@@ -278,93 +299,90 @@ section > .container {
   padding-top: 40px;
 }
 
-/* lớp "grid" đại diện cho lưới của bạn và các phần tử con của nó (có selector là ".grid > *") đại diện cho từng ô trong lưới.  */
-/* .grid-2-col-1 > * {
-  border-bottom: 2px solid #d6c08d;
-  padding: 40px 0px;
-} */
-
 /* border-bottom cho hàng đầu tiên của chứng chỉ */
-.container-child-certificate:nth-child(1),
-.container-child-certificate:nth-child(2) {
+.containers-child-certificate:nth-child(1),
+.containers-child-certificate:nth-child(2) {
   border-bottom: 2px solid #d6c08d;
   padding: 40px 0px;
 }
 
 /* padding cho hàng thứ 2 tiên của chứng chỉ */
-.container-child-certificate:nth-child(3),
-.container-child-certificate:nth-child(4) {
+.containers-child-certificate:nth-child(3) {
   padding: 40px 0px;
 }
 
 /* css cho thẻ div phần chứng chỉ */
-.container-child-certificate div {
+.containers-child-certificate div {
   padding-left: 25px;
 }
 
 /* css cho thẻ p phần chứng chỉ */
-.container-child-certificate p {
+.containers-child-certificate p {
   font-weight: 500;
 }
 
 /* border-right cho phần chứng chỉ */
-.container-child--br {
+.containers-child--br {
   border-right: 2px solid #d6c08d;
   width: 100%;
   margin-right: 20px;
 }
 
-.container-child-certificate ul {
+.containers-child-certificate ul {
   padding: 0;
   list-style: none;
   margin-top: 15px;
 }
 
 /* tạo khoảng cách dòng  */
-.container-child-certificate ul li {
+.containers-child-certificate ul li {
   line-height: 20px;
 }
 
 /* căn chỉnh phần ảnh chứng chỉ */
-.container-child-certificate img {
-  width: 200px;
-  height: 120px;
+.containers-child-certificate img {
+  width: 300px;
+  height: 160px;
 }
 
 /* Phần dự án */
-.container-child-project {
+.containers-child-project {
   display: inline-block;
   padding: 0;
-  width: 90%;
+  width: 100%;
   margin-bottom: 40px;
 }
 
 /* chỉnh ảnh projetc */
-.container-child__img {
+.containers-child__img {
   width: 100%;
   height: 190px;
   vertical-align: middle; /*làm đầy ảnh*/
 }
 
 /* làm tròn thẻ span và color, padding cho nó */
-.container-child-project span {
+.containers-child-project span {
   background-color: #199cdb;
   color: #fff;
   padding: 10px 20px;
   border-radius: 30px;
 }
 
+.project-icon p {
+  margin-bottom: 0px;
+}
+
 /* border top căn giữa cho thẻ div */
-.container-child-project div {
+.project-icon {
   border-top: 1px solid #bbb;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding: 20px 0px 20px 15px;
 }
 
-/* padding cho thẻ div */
-.container-child-project div {
-  padding: 20px 0px 20px 15px;
+.project-icon div {
+  display: flex;
 }
 
 /* tạo đường viền cho table,tr,td */
@@ -388,17 +406,18 @@ td:first-child {
   vertical-align: baseline;
 }
 
-.container-child-project i {
+.containers-child-project i {
   padding-left: 15px;
   padding-right: 5px;
 }
 
 /* tô đậm màu chữ */
-.container-child-project__CV {
+.containers-child-project__CV {
   font-weight: 500;
+  padding: 20px 0px 20px 15px;
 }
 
-/* Phần Footer */
+/* -----------------Phần Footer----------------- */
 
 #footer {
   padding: 40px 0px;
@@ -425,4 +444,12 @@ td:first-child {
   justify-content: center;
   width: 100%;
   padding: 0;
+}
+
+#footer ul li i {
+  font-size: 40px;
+}
+
+#footer .containers ul li p {
+  margin-bottom: 0px;
 }

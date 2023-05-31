@@ -1,0 +1,114 @@
+* {
+  font-size: 18px;
+}
+
+.bg {
+  background-color: #f0f8ff;
+  padding: 20px 20px 50px 20px;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  background-color: blue;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto 25% 25%;
+  box-shadow: 0px 0px 10px 2px #000;
+}
+
+.title {
+  border-bottom: 1px solid #bbb;
+}
+
+.title p {
+  margin: 0px;
+  padding-bottom: 20px;
+  color: blue;
+  font-size: 25px !important;
+  font-weight: 600;
+}
+
+.content ul {
+  padding: 0px;
+  list-style: none;
+  margin: 0;
+}
+
+.content ul li {
+  display: flex;
+  padding: 10px 30px 10px 0px;
+  width: 100%;
+}
+
+.content-child p {
+  margin: 0;
+}
+
+.content-child-title {
+  font-weight: 600;
+}
+
+.content-child p,
+.content-out-child p,
+.content-in-child p,
+.content-child p:last-child {
+  line-height: 1.5;
+}
+
+.content-icon,
+.content-number {
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+}
+
+.content-icon i {
+  font-size: 25px;
+}
+
+/* Phần goal */
+#goals {
+  flex-grow: 2;
+}
+
+#timeline .content-child,
+#goals .content ul li {
+  border-bottom: 1px solid #bbb;
+  padding: 0px 0px 5px 0px;
+}
+
+/* Phần team */
+.content-number {
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px 15px 10px 10px;
+  background-color: #9e88ff;
+  color: #fff;
+  font-size: 25px;
+  border: 2px solid #bbb;
+}
+
+/* Phần timeline */
+#timeline {
+  grid-row-end: span 2;
+}
+
+#timeline .content-child {
+  border-bottom: 1px dashed #bbb;
+  padding: 0px 0px 5px 0px;
+  width: 100%;
+}
+/* Phần scopes */
+#scopes .content {
+  display: flex;
+  padding: 10px;
+}
+
+.content-inout-title p {
+  margin: 0;
+}
+/* Phần primary */
