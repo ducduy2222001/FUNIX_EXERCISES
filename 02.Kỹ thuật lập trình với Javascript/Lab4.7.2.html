@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab4.7.2</title>
+    <script>
+      const calcTip = function (bill) {
+        return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+      };
+
+      const bills = [125, 555, 44];
+      const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+      const totals = [
+        bills[0] + tips[0],
+        bills[1] + tips[1],
+        bills[2] + tips[2],
+      ];
+
+      console.log(bills, tips, totals);
+    </script>
+  </head>
+  <body></body>
+</html>

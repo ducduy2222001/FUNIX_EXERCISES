@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab3.3</title>
+  </head>
+  <script>
+    let numNeighbours = prompt(
+      "How many neighbor countries does your country have?"
+    );
+    if (numNeighbours === 1) {
+      console.log("Only 1 border");
+    } else if (numNeighbours > 1) {
+      console.log("More than 1 border");
+    } else {
+      console.log("No borders");
+    }
+
+    //nếu thay numNeighbours ===1 thì nó sẽ ra no borders vì === là so sánh giá trị đó có bằng kiểu dữ liệu hay k mà kiểu dữ liệu của numNeighbours là string
+  </script>
+  <body></body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab4.2</title>
+    <script>
+      function percentageOfWorld1(population) {
+        return (population / 7.9) * 100;
+      }
+
+      const chinaPop = 1441;
+      const usPop = 332;
+      const vietnamPop = 98;
+
+      const chinaPercentage = percentageOfWorld1(chinaPop);
+      const usPercentage = percentageOfWorld1(usPop);
+      const vietnamPercentage = percentageOfWorld1(vietnamPop);
+
+      console.log(
+        `China population is ${chinaPercentage.toFixed(
+          1
+        )}% of the world population`
+      );
+      console.log(
+        `US population is ${usPercentage.toFixed(1)}% of the world population`
+      );
+      console.log(
+        `Vietnam population is ${vietnamPercentage.toFixed(
+          1
+        )}% of the world population`
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

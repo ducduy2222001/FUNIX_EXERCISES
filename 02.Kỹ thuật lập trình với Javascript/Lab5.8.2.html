@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab5.8.2</title>
+    <script>
+      const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+      let tips = [];
+      let totals = [];
+      let calsTip = (tip, bill) => {
+        return tip + bill;
+      };
+      for (let i = 0; i < bills.length; i++) {
+        let tip;
+        if (bills[i] <= 300 && bills[i] >= 50) {
+          tip = bills[i] * 0.15;
+          tips.push(tip);
+          totals.push(calsTip(bills[i], tip));
+        } else {
+          tip = bills[i] * 0.2;
+          tips.push(tip);
+          totals.push(calsTip(bills[i], tip));
+        }
+      }
+      console.log(tips);
+      console.log(totals);
+
+      let calcAverage = (arr) => {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+          sum += arr[i];
+        }
+        console.log(sum);
+      };
+
+      calcAverage(totals);
+    </script>
+  </head>
+  <body></body>
+</html>

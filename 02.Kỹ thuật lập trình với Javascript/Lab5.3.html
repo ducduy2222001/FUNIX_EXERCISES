@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab5.3</title>
+    <script>
+      const myCountry = {
+        country: "VN",
+        capital: "Hanoi",
+        language: "VietNamese",
+        population: 6,
+        neighbours: ["Lao", "Thai", "Cam"],
+        describe: function () {
+          console.log(
+            `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+          );
+        },
+        checkIsland: function () {
+          this.isIsland = this.neighbours.length === 0 ? true : false;
+        },
+      };
+
+      myCountry.describe();
+      myCountry.checkIsland();
+      console.log(myCountry);
+    </script>
+  </head>
+  <body></body>
+</html>

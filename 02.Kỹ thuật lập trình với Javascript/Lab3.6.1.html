@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab3.6.1</title>
+  </head>
+  <script>
+    let scoreDolphins = (96 + 108 + 89) / 3;
+    let scoreKoalas = (88 + 91 + 110) / 3;
+
+    // if (scoreDolphins > scoreKoalas) {
+    //   console.log("Dolphins win the trophy!");
+    // } else if (scoreKoalas > scoreDolphins) {
+    //   console.log("Koalas win the trophy!");
+    // } else {
+    //   console.log("Both win the trophy!");
+    // }
+
+    if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+      console.log("Dolphins win the trophy!");
+    } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+      console.log("Koalas win the trophy!");
+    } else if (
+      scoreDolphins === scoreKoalas &&
+      scoreDolphins >= 100 &&
+      scoreKoalas >= 100
+    ) {
+      console.log("Both win the trophy!");
+    } else {
+      console.log("No one wins the trophy");
+    }
+  </script>
+  <body></body>
+</html>

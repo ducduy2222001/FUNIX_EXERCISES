@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab4.6</title>
+    <script>
+      let country = "France";
+      let neighbours = [
+        "Belgium",
+        "Germany",
+        "Luxembourg",
+        "Monaco",
+        "Spain",
+        "Switzerland",
+      ];
+
+      neighbours.push("Utopia");
+
+      neighbours.pop();
+
+      let index = neighbours.indexOf("Spain");
+      if (index !== -1) {
+        neighbours[index] = "Kingdom of Spain";
+      }
+
+      if (!neighbours.includes("Germany")) {
+        console.log("Probably not a central European country :D");
+      }
+      console.log(neighbours);
+    </script>
+  </head>
+  <body></body>
+</html>

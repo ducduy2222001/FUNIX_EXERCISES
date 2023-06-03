@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab2.6.1</title>
+  </head>
+  <script>
+    // Dữ liệu 1: Mark nặng 78 kg và cao 1.69 m. John nặng 92 kg và cao 1.95 m.
+    let markWeight = 78;
+    let markHeight = 1.69;
+    let johnWeight = 92;
+    let johnHeight = 1.95;
+
+    // Dữ liệu 2: Mark nặng 95 kg và cao 1.88 m. John nặng 85 kg và cao 1.76 m.
+    // let markWeight = 95;
+    // let markHeight = 1.88;
+    // let johnWeight = 85;
+    // let johnHeight = 1.76;
+
+    // Tính chỉ số BMI của Mark và John
+    let markBMI = markWeight / (markHeight * markHeight);
+    let johnBMI = johnWeight / (johnHeight * johnHeight);
+
+    if (markBMI > johnBMI) {
+      console.log("Mark's BMI is higher than John's!");
+      console.log(
+        `Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`
+      );
+    } else {
+      console.log("John's BMI is higher than Mark's!");
+      console.log(
+        `John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`
+      );
+    }
+  </script>
+  <body></body>
+</html>
