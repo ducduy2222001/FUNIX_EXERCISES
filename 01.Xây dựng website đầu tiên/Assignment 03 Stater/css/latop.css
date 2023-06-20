@@ -7,6 +7,10 @@
   background: #f7f7f7;
 }
 
+body {
+  display: inline-block;
+}
+
 /*-----------------Phần chung----------------- */
 .section-title {
   margin: 40px 0px; /*Margin cho tất cả tiêu đề*/
@@ -14,8 +18,8 @@
 
 /* cho độ dài và margin cho phần containers */
 section > .containers {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
   max-width: 1024px;
 }
 
@@ -116,11 +120,12 @@ section > .containers {
 }
 
 /* căn chỉnh 2 cột và width 100% */
-.grid-2-col-1,
+.grid-2-col,
 #about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
+  padding-bottom: 40px;
 }
 
 /* css phần info padding:0 và xóa gạch đầu dòng cho thẻ ul */

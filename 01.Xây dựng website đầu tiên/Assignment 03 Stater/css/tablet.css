@@ -42,21 +42,19 @@
   }
 
   #nav-bar .containers a {
-    padding: 15px 30px !important;
+    padding: 15px 25px !important;
     font-size: 17px;
   }
 
   #nav-bar .containers a:nth-child(2) {
-    border-right: none;
-    margin-right: 0;
+    margin-right: 30px;
   }
   #nav-bar .containers a:nth-child(4) {
-    border-left: none;
-    margin-left: 0;
+    margin-left: 30px;
   }
 
   /*-----------------Phần about----------------- */
-  #about .containers {
+  /* #about .containers {
     width: 100%;
   }
 
@@ -64,7 +62,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-  }
+  } */
 
   #about .section-title {
     font-size: 30px;
@@ -77,10 +75,6 @@
 
   /*-------------Phần kinh nghiệm, học vấn,..------------ */
   /* Phần chỉnh sửa cột */
-
-  .grid-2-tablet .containers {
-    display: flex;
-  }
 
   .grid-2-tablet .containers {
     padding: 30px;
@@ -133,8 +127,11 @@
   }
 
   /*-------------Phần chứng chỉ---------------- */
+
   #certificate {
     background-color: #f7f7f7;
+    display: block;
+    padding: 0 20px;
   }
 
   #certificate h1 {
@@ -145,13 +142,20 @@
   .containers-child-certificate:not(:nth-child(1)) {
     display: flex;
     flex-direction: column;
-    padding: 0px 20px 40px 20px !important;
   }
 
   .containers-child-certificate:nth-child(1) {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 30px 20px;
+  }
+
+  .pl {
+    padding-left: 20px !important;
+  }
+
+  .br {
+    border-right: 1px solid #d6c08d;
+    padding: 0px 20px 0px 0px;
   }
 
   .containers-child-certificate div {
@@ -168,16 +172,11 @@
   }
 
   .containers-child-certificate:nth-child(3) {
-    padding: 40px 20px 0px 20px !important;
+    padding: 40px 20px 0px 0px !important;
   }
 
   .containers-child--br {
-    border-right: none;
-  }
-
-  .br {
     border-right: 1px solid #d6c08d;
-    padding: 0px 20px 0px 0px;
   }
 
   /*----------------Phần dự án--------------- */
