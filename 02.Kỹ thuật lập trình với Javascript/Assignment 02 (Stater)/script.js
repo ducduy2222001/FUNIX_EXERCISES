@@ -21,6 +21,9 @@ submitBtn.addEventListener("click", function () {
 
   // Xác thực dữ liệu nhập vào đúng với điều kiện
   function validateData(data) {
+    console.log(data);
+    console.log(typeof data);
+
     let isValidata = true;
     if (data.id.trim() === "") {
       alert("Please input for id");
