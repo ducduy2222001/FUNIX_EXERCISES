@@ -38,7 +38,9 @@ function parseUser(userData) {
 }
 //To do list
 const tasks = getFromStorage("arrTodoList") ?? [];
+
 const taskArr = tasks.map((task) => parseTodoList(task));
+
 function parseTodoList(taskData) {
   const task = new TodoList(taskData.task, taskData.owner, taskData.isDone);
   return task;

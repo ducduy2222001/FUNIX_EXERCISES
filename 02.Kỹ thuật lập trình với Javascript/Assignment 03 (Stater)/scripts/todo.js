@@ -22,6 +22,26 @@ if (currentUser) {
     }
   });
 
+  //xử lí btn search enter
+  inputTaskEl.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      if (inputTaskEl.value.length === 0) {
+        alert("Vui lòng nhập task");
+      } else {
+        const tasks = new TodoList(
+          inputTaskEl.value,
+          currentUser.username,
+          false
+        );
+        taskArr.push(tasks);
+        saveToStorage("arrTodoList", taskArr);
+        displayTodoList();
+        inputTaskEl.value = "";
+      }
+    }
+  });
+
   function displayTodoList() {
     ulEl.innerHTML = "";
     taskArr
