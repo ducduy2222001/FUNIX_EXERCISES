@@ -4,6 +4,7 @@ const btnSave = document.getElementById("btn-submit");
 const categoryEl = document.getElementById("input-category");
 const pageSizeEl = document.getElementById("input-page-size");
 
+// check user đã đăng nhập hay chưa
 if (currentUser) {
   //handler btn save setting
   btnSave.addEventListener("click", () => {

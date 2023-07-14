@@ -8,6 +8,7 @@ const btnNext = document.getElementById("btn-next");
 const pageNum = document.getElementById("page-num");
 const navPageNum = document.getElementById("nav-page-num");
 
+// check user đã đăng nhập hay chưa
 if (currentUser) {
   let keywords = "";
   navPageNum.style.display = "none";

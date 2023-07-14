@@ -5,6 +5,7 @@ const btnPrev = document.getElementById("btn-prev");
 const btnNext = document.getElementById("btn-next");
 const pageNum = document.getElementById("page-num");
 
+// check user đã đăng nhập hay chưa
 if (currentUser) {
   getData("us", 1);
   // hàm xử lí lấy dữ liệu từ api thông báo các lỗi khi không fetch dc
