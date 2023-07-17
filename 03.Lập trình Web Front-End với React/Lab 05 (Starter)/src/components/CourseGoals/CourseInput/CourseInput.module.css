@@ -1,0 +1,13 @@
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.invalid {
+  color: red;
+}

@@ -1,0 +1,34 @@
+.container-seach-item {
+  display: flex;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.search-item--image {
+  width: 220px;
+  height: 270px;
+}
+
+.search-item--content1 {
+  margin: 0px 20px;
+  line-height: 40px;
+}
+
+.search-item--content1 h2 {
+  color: #0071c2;
+}
+
+.search-item--tag {
+  background-color: #008009;
+  display: inline;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.search-item--description {
+  font-weight: bold;
+}

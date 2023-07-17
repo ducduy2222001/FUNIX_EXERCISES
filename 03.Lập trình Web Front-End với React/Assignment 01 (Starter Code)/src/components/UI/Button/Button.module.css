@@ -1,0 +1,14 @@
+.btn {
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #003580;
+  cursor: pointer;
+}
+
+.btn-boder {
+  border: 1px solid #fff;
+}
