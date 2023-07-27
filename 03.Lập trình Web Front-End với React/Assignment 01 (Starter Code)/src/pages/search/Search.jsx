@@ -1,15 +1,22 @@
 import { styled } from "styled-components";
-import SearchPopup from "../../components/Search/SearchPopup";
-import Layout from "../../layout/Layout";
-import SearchList from "../../components/Search/SearchList";
-import "./Search.css";
+import SearchPopup from "../search/component/SearchPopup";
+import Layout from "../../components/layout/Layout";
+import SearchList from "../search/component/SearchList";
+
+const StyledContainer = styled.div`
+  padding: 100px 0px;
+  display: grid;
+  grid-template-columns: 300px 900px;
+  justify-content: center;
+`;
+
 const Search = () => {
   return (
     <Layout>
-      <div className="container-search">
+      <StyledContainer>
         <SearchPopup />
         <SearchList />
-      </div>
+      </StyledContainer>
     </Layout>
   );
 };

@@ -1,20 +1,21 @@
 import { styled } from "styled-components";
-import Layout from "../../layout/Layout";
-import CityListItem from "../../components/ShowCity/CityListItem";
-import TypeHotelListItem from "../../components/ShowTypeHotel/TypeHotelListItem";
-import HotelListItem from "../../components/ShowHotel/HotelListItem";
-const Div = styled.div`
+import Layout from "../../components/layout/Layout";
+import CityListItem from "../home/components/City/CityListItem";
+import TypeHotelListItem from "../home/components/TypeHotel/TypeHotelListItem";
+import HotelListItem from "../home/components/Hotel/HotelListItem";
+const StyledContainer = styled.div`
   padding: 70px 300px;
 `;
 
 const Home = () => {
+  // sử dụng layout để dùng lại các component
   return (
     <Layout>
-      <Div>
+      <StyledContainer>
         <CityListItem />
         <TypeHotelListItem />
         <HotelListItem />
-      </Div>
+      </StyledContainer>
     </Layout>
   );
 };
