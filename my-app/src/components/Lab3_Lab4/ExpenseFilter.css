@@ -1,0 +1,17 @@
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 450px;
+  padding: 20px;
+}
+
+.title {
+  font-weight: bold;
+  color: #fff;
+}
+.selectYear {
+  padding: 7px 15px;
+  border-radius: 7px;
+  font-weight: bold;
+}
